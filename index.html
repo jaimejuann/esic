@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VELOX · Premium Car Rentals</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a href="#inicio" class="logo">VELOX</a>
+    <nav>
+      <a href="#inicio">INICIO</a>
+      <a href="#coches">COCHES</a>
+      <a href="#servicios">SERVICIOS</a>
+      <a href="#contacto">CONTACTO</a>
+      <a href="#blog">BLOG</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Premium Car Rentals</p>
+          <h1>Conduce sin límites</h1>
+          <p>Flota de superdeportivos y SUVs de lujo con entrega inmediata en aeropuerto, hotel o villa.</p>
+          <figure class="hero-cover">
+            <img src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?auto=format&fit=crop&w=1600&q=80" alt="Aston Martin V12 Roadster de portada">
+          </figure>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contacto">Reservar ahora</a>
+            <a class="btn btn-outline" href="#coches">Ver flota</a>
+          </div>
+        </div>
+        <form class="booking-box" id="bookingForm">
+          <h3>Consulta disponibilidad</h3>
+          <label>Recogida<input type="date" required></label>
+          <label>Devolución<input type="date" required></label>
+          <label>Tipo de vehículo
+            <select required>
+              <option value="">Selecciona</option>
+              <option>Superdeportivo</option>
+              <option>SUV Premium</option>
+              <option>Cabrio de lujo</option>
+            </select>
+          </label>
+          <button class="btn btn-primary" type="submit">Buscar coche</button>
+          <small id="bookingStatus"></small>
+        </form>
+      </div>
+    </section>
+
+    <section id="coches" class="container section">
+      <h2>Nuestra flota premium</h2>
+      <div class="grid-cars" id="carsGrid"></div>
+    </section>
+
+    <section id="servicios" class="container section">
+      <h2>Nuestros servicios</h2>
+      <div class="services-grid">
+        <article><h3>Entrega y recogida</h3><p>Servicio puerta a puerta sin colas ni esperas, todos los días.</p></article>
+        <article><h3>Conductor privado</h3><p>Traslados VIP, eventos, cenas y rutas personalizadas con chófer.</p></article>
+        <article><h3>Concierge personal</h3><p>Restaurantes, beach clubs, experiencias premium y gestión integral.</p></article>
+        <article><h3>Soporte 24/7</h3><p>Atención directa por WhatsApp y teléfono durante toda la reserva.</p></article>
+      </div>
+    </section>
+
+    <section class="container section trust">
+      <div><strong>+100</strong><span>vehículos premium</span></div>
+      <div><strong>20 años</strong><span>de experiencia</span></div>
+      <div><strong>4.9/5</strong><span>valoración media</span></div>
+      <div><strong>&lt;30 min</strong><span>respuesta comercial</span></div>
+    </section>
+
+
+    <section id="blog" class="container section">
+      <h2>Blog VELOX</h2>
+      <div class="blog-grid">
+        <article class="blog-card">
+          <h3>Nuestra historia: de servicio local a referente premium</h3>
+          <p>VELOX nació en la Costa del Sol con una idea clara: ofrecer alquiler de lujo con trato humano. Comenzamos con una flota reducida de deportivos italianos y, tras 20 años, hoy operamos en destinos clave de España con entrega y recogida personalizadas.</p>
+          <p>La evolución de VELOX ha sido constante: mejor selección de vehículos, protocolos de calidad y soporte 24/7. Nuestro objetivo sigue siendo el mismo: que cada cliente conduzca exactamente el coche que imagina, sin fricción en el proceso.</p>
+        </article>
+        <article class="blog-card">
+          <h3>Guía útil para alquilar un coche de alta gama</h3>
+          <ul>
+            <li><strong>Reserva con antelación:</strong> los modelos más demandados se agotan en temporada alta.</li>
+            <li><strong>Define uso real:</strong> ciudad, carretera o evento; así eliges entre superdeportivo, GT o SUV.</li>
+            <li><strong>Revisa cobertura:</strong> franquicia, asistencia y conductor adicional antes de confirmar.</li>
+            <li><strong>Entrega flexible:</strong> aeropuerto u hotel para ahorrar tiempo en traslados.</li>
+          </ul>
+        </article>
+        <article class="blog-card">
+          <h3>Consejos VELOX para disfrutar más tu experiencia</h3>
+          <p>Planifica rutas panorámicas con baja densidad de tráfico para disfrutar del vehículo. Si viajas en pareja o por negocio, combinar un cabrio premium durante el día y un SUV de lujo para trayectos largos puede mejorar el confort y la practicidad.</p>
+          <p>En VELOX recomendamos elegir vehículo por sensaciones y necesidad: Ferrari o Lamborghini para impacto visual, Aston Martin para elegancia, Porsche para equilibrio y Mercedes/BMW para confort tecnológico diario.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contacto" class="container section contact-wrap">
+      <h2>Reserva tu experiencia</h2>
+      <form id="contactForm" class="contact-form">
+        <label>Nombre y apellidos<input type="text" name="name" required></label>
+        <label>Correo<input type="email" name="email" required></label>
+        <label>Teléfono<input type="tel" name="phone" required></label>
+        <label>Mensaje<textarea name="message" rows="6" required placeholder="Fechas, ciudad y modelo deseado..."></textarea></label>
+        <button class="btn btn-primary" type="submit">Enviar</button>
+        <p id="formStatus" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div><h3>VELOX</h3><p>Exclusividad, confianza y experiencia.</p></div>
+    <div class="footer-links">
+      <a href="#inicio">Inicio</a><a href="#coches">Coches</a><a href="#servicios">Servicios</a><a href="#contacto">Contacto</a><a href="#blog">Blog</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
