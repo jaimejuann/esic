@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VELOX · Premium Car Rentals</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a href="#inicio" class="logo">VELOX</a>
+    <nav>
+      <a href="#inicio">INICIO</a>
+      <a href="#coches">COCHES</a>
+      <a href="#servicios">SERVICIOS</a>
+      <a href="#contacto">CONTACTO</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero container">
+      <p class="eyebrow">Premium Car Rentals</p>
+      <h1>Conduce sin límites</h1>
+      <p>Alquiler de coches de lujo para viajes de negocios, turismo premium y ocasiones especiales.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#contacto">Reservar ahora</a>
+        <a class="btn btn-outline" href="#coches">Ver flota</a>
+      </div>
+    </section>
+
+    <section id="coches" class="container section">
+      <h2>Nuestra flota premium</h2>
+      <div class="grid-cars" id="carsGrid"></div>
+    </section>
+
+    <section id="servicios" class="container section">
+      <h2>Nuestros servicios</h2>
+      <div class="services-grid">
+        <article><h3>Entrega inmediata</h3><p>Recoge en aeropuerto, hotel o domicilio con disponibilidad 24/7.</p></article>
+        <article><h3>Conductor privado</h3><p>Opcional con chófer bilingüe para ejecutivos, eventos y rutas exclusivas.</p></article>
+        <article><h3>Seguro premium</h3><p>Cobertura ampliada, asistencia en carretera y vehículo de sustitución.</p></article>
+        <article><h3>Atención personal</h3><p>Asesor dedicado para ajustar vehículo, extras y presupuesto a medida.</p></article>
+      </div>
+    </section>
+
+    <section id="contacto" class="container section contact-wrap">
+      <h2>Reserva tu experiencia</h2>
+      <form id="contactForm" class="contact-form">
+        <label>Nombre y apellidos
+          <input type="text" name="name" required placeholder="Ej. Laura Martín" />
+        </label>
+        <label>Correo
+          <input type="email" name="email" required placeholder="nombre@correo.com" />
+        </label>
+        <label>Vehículo de interés
+          <select name="car" required>
+            <option value="">Selecciona una opción</option>
+            <option>Lamborghini Huracán Performante</option>
+            <option>McLaren 720S</option>
+            <option>Aston Martin Vantage V12</option>
+            <option>Ferrari LaFerrari</option>
+          </select>
+        </label>
+        <label>Mensaje
+          <textarea name="message" rows="6" required placeholder="Cuéntanos fechas, ciudad y preferencias..."></textarea>
+        </label>
+        <button class="btn btn-primary" type="submit">Enviar</button>
+        <p id="formStatus" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>
+      <h3>VELOX</h3>
+      <p>Exclusividad, confianza y experiencia.</p>
+    </div>
+    <div>
+      <a href="#inicio">Inicio</a>
+      <a href="#coches">Coches</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#contacto">Contacto</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
